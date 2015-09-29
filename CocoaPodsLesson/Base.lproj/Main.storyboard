@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CocoaPodsLesson" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RAB-KY-Iqy">
+                                <rect key="frame" x="270" y="285" width="61" height="30"/>
+                                <state key="normal" title="Get Joke"/>
+                                <connections>
+                                    <action selector="jokeRenderButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ei5-AB-Ajk"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ha-qh-UUi">
+                                <rect key="frame" x="91" y="154" width="419" height="106"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="106" id="6pU-Xb-vI2"/>
+                                    <constraint firstAttribute="width" constant="419" id="KjO-0q-qeQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YgG-R4-39m">
+                                <rect key="frame" x="240" y="352" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="l6r-SI-Ruu"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3ha-qh-UUi" firstAttribute="centerX" secondItem="RAB-KY-Iqy" secondAttribute="centerX" id="52K-Gl-9wo"/>
+                            <constraint firstItem="RAB-KY-Iqy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JoP-Wn-C2J"/>
+                            <constraint firstItem="3ha-qh-UUi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="71" id="PgI-6t-EZM"/>
+                            <constraint firstItem="RAB-KY-Iqy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="YVD-9K-ehR"/>
+                            <constraint firstItem="YgG-R4-39m" firstAttribute="centerX" secondItem="RAB-KY-Iqy" secondAttribute="centerX" id="aPn-RU-gZ9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YgG-R4-39m" secondAttribute="bottom" constant="128" id="hlr-lG-zMV"/>
+                            <constraint firstItem="RAB-KY-Iqy" firstAttribute="top" secondItem="3ha-qh-UUi" secondAttribute="bottom" constant="25" id="ofV-uy-jeF"/>
+                            <constraint firstItem="YgG-R4-39m" firstAttribute="top" secondItem="RAB-KY-Iqy" secondAttribute="bottom" constant="37" id="zNF-T9-c9w"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3ha-qh-UUi" secondAttribute="trailing" constant="70" id="zWJ-Ye-7nO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="chuckImage" destination="YgG-R4-39m" id="U8I-2x-phc"/>
+                        <outlet property="jokeLabel" destination="3ha-qh-UUi" id="veJ-BP-pvG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="230" y="335"/>
+        </scene>
+    </scenes>
+</document>
